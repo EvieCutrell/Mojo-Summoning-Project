@@ -11,8 +11,8 @@ Deck.belongsTo(User);
 Deck.hasMany(Card);
 Card.belongsTo(Deck);
 
-Card.belongsToMany(Attack);
-Attack.belongsToMany(Card);
+Card.belongsToMany(Attack, {through: "card_attack"});
+Attack.belongsToMany(Card, {through: "card_attack"});
 
 // and then export them all below
 module.exports = 
