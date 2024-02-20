@@ -26,7 +26,8 @@ beforeAll(async () => {
     console.log(JSON.stringify(user, null, 2));
     let userDeck = await user.getDeck();
     console.log(JSON.stringify(userDeck, null, 2));
-    await user.setDeck(deck2);
+    //uncomment below line to see set fail due to association rules
+    //await user.setDeck([deck, deck2]); 
     userDeck = await user.getDeck();
     console.log(JSON.stringify(userDeck, null, 2));
   });
