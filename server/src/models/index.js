@@ -1,5 +1,7 @@
-const  User  = require('./User');
+const  User = require('./User');
 const Deck = require("./Deck.js");
+const Card = require("./Card.js");
+const Attack = require("./Attack.js")
 // import the rest of your models above
 
 // set up the associations here
@@ -8,5 +10,8 @@ const Deck = require("./Deck.js");
 module.exports = 
 { 
   User,
-  Deck
+  Deck,
+  Card,
+  Attack
+
 }
