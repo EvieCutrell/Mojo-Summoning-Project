@@ -4,7 +4,8 @@ class Deck extends Model {};
 
 Deck.init(
     {
-        name: DataTypes.STRING
+        name: DataTypes.STRING,
+        xp: DataTypes.INTEGER
     },
     {
         sequelize: db,
