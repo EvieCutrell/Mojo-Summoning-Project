@@ -20,7 +20,7 @@ describe('User', () => {
   })
 
   test("has a username of gandalf", () => {
-    console.log(JSON.stringify(user, null, 2));
+    //console.log(JSON.stringify(user, null, 2));
     expect(user["username"]).toEqual("gandalf");
   })
 
